@@ -5,13 +5,29 @@
 }
 
 :root {
-  --white: #f8f8f8;
+  --color-highlight: #FF57B2;
+  --color-heading: #F8F8F8;
+  --color-background: #1A1D23;
+  --color-info: #BBBBBB;
+  --color-body: #D7D7D7;
+}
 
-  --gray-100: #d7d7d7;
-  --gray-300: #bbbbbb;
-  --gray-900: #1a1d23;
+body {
+  background: var(--color-background);
+  color: var(--color-body);
+}
 
-  --pink-500: #ff57b2;
+body, input, textarea, select, button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 1080px) {
@@ -24,26 +40,4 @@
   html {
     font-size: 87.5%;
   }
-}
-
-body {
-  background: var(--gray-900);
-  color: var(--white);
-}
-
-body,
-input,
-textarea,
-select,
-button {
-  font: 400 1rem 'Inter', sans-serif;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
